@@ -1,3 +1,8 @@
+% Test rsm_predict, rsm_mapred_euc, rsm_mapred_mean.
+%
+% For full test suite, see rsm_runtests.
+%
+% 20171115 J Carlin
 ncon = 4;
 response = {rand(40,20,4),rand(80,100,4)};
 w = rand(1,2);
