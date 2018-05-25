@@ -5,9 +5,9 @@
 % % weight ND matrix resp by w (after applying rsm_flatten), estimate sum of
 % squares for all pairwise comparisons 
 %
-% eucred(respc)
+% eucred(respc,w)
 % % vertically concatenate all the inputs in cell array respc, sum and 
-% square root
+% square root. w input is ignored.
 %
 % [eucmap,eucred] = rsm_mapred_euc()
 % 
@@ -23,6 +23,6 @@ resp = rsm_mapweights(resp,w);
 cons = allpairwisecontrasts(size(resp,2));
 sqsum = sum((resp * cons').^2);
 
-function euc = reduce(respc)
+function euc = reduce(respc,w)
 
 euc = sqrt(sum(vertcat(respc{:}),1))';

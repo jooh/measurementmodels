@@ -22,3 +22,4 @@ assert(max(rdv-rdvalt)<1e-12,'rsm_mapred_euc does not match default euclidean co
 [mmap,mred] = rsm_mapred_mean;
 malt = rsm_predict(response,w,mmap,{mred});
 assert(max(m-malt)<1e-12,'rsm_mapred_mean does not match default mean compute');
+

@@ -1,6 +1,6 @@
 % flatten the input x to 2D by collapsing dimensions 1:end-1. Cell array inputs
 % are unpacked and a single matrix is returned. Useful for unpacking high-D model
-% responses (e.g. {x by y by filter by image}) to 2D.
+% responses (e.g. {x by y by filter by image}) to 2D (feature by image).
 %
 % x = rsm_flatten(x)
 %
